@@ -1,0 +1,25 @@
+ecommerce-springboot/
+│── src/main/java/com/example/ecommerce/
+│   ├── EcommerceApplication.java
+│   ├── controller/
+│   │    ├── ProductController.java
+│   │    ├── CartController.java
+│   │    └── OrderController.java
+│   ├── model/
+│   │    ├── Product.java
+│   │    ├── CartItem.java
+│   │    └── Order.java
+│   ├── repository/
+│   │    ├── ProductRepository.java
+│   │    ├── CartRepository.java
+│   │    └── OrderRepository.java
+│   └── service/
+│        ├── ProductService.java
+│        ├── CartService.java
+│        └── OrderService.java
+│
+│── src/main/resources/
+│   └── application.properties
+│
+│── pom.xml
+│── README.md
