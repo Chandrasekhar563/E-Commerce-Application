@@ -1,0 +1,15 @@
+@RestController
+@RequestMapping("/orders")
+public class OrderController {
+
+    private final OrderService service;
+
+    public OrderController(OrderService service) {
+        this.service = service;
+    }
+
+    @PostMapping("/pay")
+    public Order pay(@RequestParam double total) {
+        return service.placeOrder(total);
+    }
+}
