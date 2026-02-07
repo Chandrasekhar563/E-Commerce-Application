@@ -1,0 +1,22 @@
+package com.example.ecommerce.repository;
+
+import com.example.ecommerce.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {}
+--------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------\
+package com.example.ecommerce.repository;
+
+import com.example.ecommerce.model.CartItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CartRepository extends JpaRepository<CartItem, Long> {}
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+package com.example.ecommerce.repository;
+
+import com.example.ecommerce.model.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderRepository extends JpaRepository<Order, Long> {}
